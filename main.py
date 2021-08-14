@@ -8,7 +8,7 @@ import keyboard
 from PyQt5.QtWidgets import QApplication, QWidget
 from PyQt5 import uic
 
-class Main(QWidget):
+class MainApp(QWidget):
     def __init__(self):
         super().__init__()
         uic.loadUi('gui.ui', self)
@@ -16,7 +16,7 @@ class Main(QWidget):
 if __name__=='__main__':
     app = QApplication(sys.argv)
 
-    main = Main()
+    main = MainApp()
     main.show()
 
     try:
