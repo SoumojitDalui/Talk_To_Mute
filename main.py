@@ -39,6 +39,8 @@ class SuppressAudio:
         call.Display.setStyleSheet("background-color: rgb(85, 255, 127);")
         call.Display.setAlignment(QtCore.Qt.AlignCenter)
         self.stream.stop_stream()
+        pyautogui.keyUp("NUM0")
+        print("Released 0")
     
 
 if __name__=='__main__':
